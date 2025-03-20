@@ -1,1 +1,1 @@
-# objects-coding-challeges
+# strings-coding-challeges
