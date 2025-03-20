@@ -1,68 +1,51 @@
-// Code Challenge: Identify and Manipulate Arrays
+// Code Challenge: String Concatenation and Template Literals
 
 // Challenge 1:
-// Create a function that takes an array of numbers and returns the sum of all the numbers in the array.
-// Example: calculateSum([1, 2, 3, 4, 5]) should return 15.
+// Create a function that takes two strings and concatenates them using the + operator.
+// Example: concatenateStrings("Hello", "World") should return "HelloWorld".
 
-function calculateSum(numbers) {
+function concatenateStrings(str1, str2) {
   // Write your code here
 }
 
 // Challenge 2:
-// Create a function that takes an array of strings and returns the concatenation of all the strings in the array, separated by a space.
-// Example: concatenateStrings(["Hello", "World", "JavaScript"]) should return "Hello World JavaScript".
+// Create a function that takes two strings and concatenates them using template literals.
+// Example: concatenateStringsTemplate("Hello", "World") should return "HelloWorld".
 
-function concatenateStrings(strings) {
+function concatenateStringsTemplate(str1, str2) {
   // Write your code here
 }
 
 // Challenge 3:
-// Create a function that takes an array of numbers and returns a new array with only the even numbers from the original array.
-// Example: filterEvenNumbers([1, 2, 3, 4, 5, 6]) should return [2, 4, 6].
+// Create a function that takes a name and an age and uses template literals to return a string in the following format: "My name is [name] and I am [age] years old."
+// Example: createSentence("John", 25) should return "My name is John and I am 25 years old."
 
-function filterEvenNumbers(numbers) {
+function createSentence(name, age) {
   // Write your code here
 }
+// Code Challenge: String Concatenation and Template Literals
 
 // Challenge 4:
-// Create a function that takes an array of strings and returns a new array with the lengths of the strings from the original array.
-// Example: getStringLengths(["Hello", "World", "JavaScript"]) should return [5, 5, 10].
+// Create a function that takes two strings and concatenates them using the concat() method.
+// Example: concatenateStringsMethod("Hello", "World") should return "HelloWorld".
 
-function getStringLengths(strings) {
+function concatenateStringsMethod(str1, str2) {
   // Write your code here
 }
 
-// Code Challenge: Identify and Manipulate Arrays
-
 // Challenge 5:
-// Create a function that takes an array of numbers and returns the largest number in the array.
-// Example: findLargestNumber([10, 5, 7, 3, 9]) should return 10.
+// Create a function that takes three strings and concatenates them using template literals with line breaks.
+// Example: concatenateWithLineBreaks("Hello", "World", "How are you?") should return "Hello\nWorld\nHow are you?".
 
-function findLargestNumber(numbers) {
+function concatenateWithLineBreaks(str1, str2, str3) {
   // Write your code here
 }
 
 // Challenge 6:
-// Create a function that takes an array of strings and returns a new array with the strings in uppercase.
-// Example: convertToUppercase(["hello", "world", "javascript"]) should return ["HELLO", "WORLD", "JAVASCRIPT"].
+// Create a function that takes a name and a favorite color and uses template literals to return a string in the following format: "My name is [name] and my favorite color is [color]."
+// Example: createFavoriteColorSentence("Alice", "blue") should return "My name is Alice and my favorite color is blue."
 
-function convertToUppercase(strings) {
-  // Write your code here
-}
-
-// Challenge 7:
-// Create a function that takes an array of numbers and returns a new array with the numbers sorted in ascending order.
-// Example: sortNumbers([5, 2, 9, 1, 3]) should return [1, 2, 3, 5, 9].
-
-function sortNumbers(numbers) {
-  // Write your code here
-}
-
-// Challenge 8:
-// Create a function that takes an array of strings and returns the total number of characters in all the strings combined.
-// Example: countTotalCharacters(["Hello", "World", "JavaScript"]) should return 21.
-
-function countTotalCharacters(strings) {
+function createFavoriteColorSentence(name, color) {
   // Write your code here
 }
 
@@ -72,64 +55,50 @@ function countTotalCharacters(strings) {
 // *************************************************** //
 // *************************************************** //
 
-// Code Challenge: Identify and Manipulate Arrays
+// Code Challenge: String Concatenation and Template Literals
 
 // Challenge 1:
-function testCalculateSum() {
-  const result = calculateSum([1, 2, 3, 4, 5]);
-  console.log(result === 15 ? 'Test Passed' : 'Test Failed');
+function testConcatenateStrings() {
+  const result = concatenateStrings("Hello", "World");
+  console.log(result === "HelloWorld" ? 'Test Passed' : 'Test Failed');
 }
 
 // Challenge 2:
-function testConcatenateStrings() {
-  const result = concatenateStrings(["Hello", "World", "JavaScript"]);
-  console.log(result === "Hello World JavaScript" ? 'Test Passed' : 'Test Failed');
+function testConcatenateStringsTemplate() {
+  const result = concatenateStringsTemplate("Hello", "World");
+  console.log(result === "HelloWorld" ? 'Test Passed' : 'Test Failed');
 }
 
 // Challenge 3:
-function testFilterEvenNumbers() {
-  const result = filterEvenNumbers([1, 2, 3, 4, 5, 6]);
-  console.log(JSON.stringify(result) === JSON.stringify([2, 4, 6]) ? 'Test Passed' : 'Test Failed');
+function testCreateSentence() {
+  const result = createSentence("John", 25);
+  console.log(result === "My name is John and I am 25 years old." ? 'Test Passed' : 'Test Failed');
 }
+// Code Challenge: String Concatenation and Template Literals
 
 // Challenge 4:
-function testGetStringLengths() {
-  const result = getStringLengths(["Hello", "World", "JavaScript"]);
-  console.log(JSON.stringify(result) === JSON.stringify([5, 5, 10]) ? 'Test Passed' : 'Test Failed');
+function testConcatenateStringsMethod() {
+  const result = concatenateStringsMethod("Hello", "World");
+  console.log(result === "HelloWorld" ? 'Test Passed' : 'Test Failed');
 }
 
-// Code Challenge: Identify and Manipulate Arrays
-
 // Challenge 5:
-function testFindLargestNumber() {
-  const result = findLargestNumber([10, 5, 7, 3, 9]);
-  console.log(result === 10 ? 'Test Passed' : 'Test Failed');
+function testConcatenateWithLineBreaks() {
+  const result = concatenateWithLineBreaks("Hello", "World", "How are you?");
+  console.log(result === "Hello\nWorld\nHow are you?" ? 'Test Passed' : 'Test Failed');
 }
 
 // Challenge 6:
-function testConvertToUppercase() {
-  const result = convertToUppercase(["hello", "world", "javascript"]);
-  console.log(JSON.stringify(result) === JSON.stringify(["HELLO", "WORLD", "JAVASCRIPT"]) ? 'Test Passed' : 'Test Failed');
-}
-
-// Challenge 7:
-function testSortNumbers() {
-  const result = sortNumbers([5, 2, 9, 1, 3]);
-  console.log(JSON.stringify(result) === JSON.stringify([1, 2, 3, 5, 9]) ? 'Test Passed' : 'Test Failed');
-}
-
-// Challenge 8:
-function testCountTotalCharacters() {
-  const result = countTotalCharacters(["Hello", "World", "JavaScript"]);
-  console.log(result === 21 ? 'Test Passed' : 'Test Failed');
+function testCreateFavoriteColorSentence() {
+  const result = createFavoriteColorSentence("Alice", "blue");
+  console.log(result === "My name is Alice and my favorite color is blue." ? 'Test Passed' : 'Test Failed');
 }
 
 // Run the tests
-testCalculateSum();
 testConcatenateStrings();
-testFilterEvenNumbers();
-testGetStringLengths();
-testFindLargestNumber();
-testConvertToUppercase();
-testSortNumbers();
-testCountTotalCharacters();
+testConcatenateStringsTemplate();
+testCreateSentence();
+testConcatenateStringsMethod();
+testConcatenateWithLineBreaks();
+testCreateFavoriteColorSentence();
+
